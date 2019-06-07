@@ -1,7 +1,7 @@
 ;Josue Salcedo, Guillermo Castillo, Omar Lucatero
 ;CIS11 Final Project
 ;This project is not complete/ will not run. We could not figure out how to have
-;the program branch when the numbers were too large were we got an error 
+;the program branch when the numbers were too large where we got an error 
 ;from (100-90)(89-79) etc. 
 
 .ORIG x3000				;Origination Address
@@ -54,7 +54,7 @@ JSR IFSTA				;Jump to IFSTA subroutine
 
 IFSTA	LD R1, GRADE1			;If statement for A grade
 	NOT R1, R1
-	LDR R2, GRADE1
+	LDR R2, R1
 
 	BRn IFSTAB			;Branch to statement for a B grade
 
